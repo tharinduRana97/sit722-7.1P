@@ -7,19 +7,7 @@
 
 name: Deploy microservice
 
-on:
-  #
-  # Deploys the microservice on push to the main branch of this code repository.
-  #
-  push:
-    branches:
-      - main
-      - master
-
-  #
-  # Allows deployment to be invoked manually through the GitHub Actions user interface.
-  #
-  workflow_dispatch:
+on: push
 
 jobs:
   deploy:
